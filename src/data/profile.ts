@@ -14,7 +14,7 @@ export type Link = {
 
 export const profile: Profile = {
   name: "이정훈",
-  bio: "시스템엔지니어 | 요즘에는 AI 개발에 관심이 많아요",
+  bio: "요즘 AI에 관심이 많습니다.",
   avatarUrl: "/profile.jpg",
 };
 
