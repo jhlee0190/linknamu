@@ -3,21 +3,31 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #3a2e28;
+  --background: #fdf3e7;
+  /* 크림색 → 연한 살구색 */
+  --gradient: linear-gradient(165deg, #fff9f0 0%, #fdeedf 50%, #f9dcc8 100%);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #f5ebe3;
+    --background: #221a16;
+    --gradient: linear-gradient(165deg, #2a211c 0%, #241b17 50%, #1b1411 100%);
   }
 }
 
-body {
-  color: var(--foreground);
+html {
+  min-height: 100%;
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  color: var(--foreground);
+  background: var(--gradient);
+  background-attachment: fixed;
 }
 
 @layer utilities {

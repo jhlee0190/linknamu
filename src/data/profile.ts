@@ -13,13 +13,17 @@ export type Link = {
 };
 
 export const profile: Profile = {
-  name: "홍길동",
-  bio: "여기에 한 줄 소개가 들어갑니다",
-  avatarUrl: "/avatar-placeholder.svg",
+  name: "이정훈",
+  bio: "시스템엔지니어 | 요즘에는 AI 개발에 관심이 많아요",
+  avatarUrl: "/profile.jpg",
 };
 
 export const links: Link[] = [
-  { id: "github", title: "GitHub", url: "https://github.com" },
-  { id: "linkedin", title: "LinkedIn", url: "https://www.linkedin.com" },
-  { id: "blog", title: "Blog", url: "https://example.com" },
+  { id: "github", title: "GitHub", url: "https://github.com/jhlee0190" },
+  {
+    id: "linkedin",
+    title: "LinkedIn",
+    url: "https://www.linkedin.com/in/junghoon-lee-6140b5113/",
+  },
+  { id: "blog", title: "Blog", url: "https://blog.naver.com/leejh0190" },
 ];
